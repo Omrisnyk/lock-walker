@@ -4,22 +4,26 @@
   "private": true,
   "homepage": "/lock-walker",
   "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0"
+    "react-scripts": "5.0.0",
+    "redux": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "classnames": "^2.2.5",
     "glamor": "^2.20.40",
     "on-error-resume-next": "^1.0.0",
     "react-drop-to-upload": "^1.0.2"
-  }
+  },
+  "snyk": true
 }
